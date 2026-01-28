@@ -14,9 +14,14 @@ for num in range(2, limit):
 print(prime_sum)
 # WAP to By considering the terms in the Fibonacci sequence whose values do not exceed four million
 
-fib1, fib2 = 1, 2
-sum = 0
+a, b = 1, 2
+sum_even = 0
 
+while b <= 4000000:
+    if b % 2 == 0:
+        sum_even += b
+    a, b = b, a + b
 
-# while fib1 <= 4000000:
+print("Sum of even Fibonacci numbers:", sum_even)
+
     
